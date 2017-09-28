@@ -32,7 +32,7 @@ router.post('/', (request, response) => {
 
   const newUser = request.body
 
-  CompanyModel.create(newUser)
+  UserModel.create(newUser)
       .then(() => {
           response.redirect('/users')
       })
