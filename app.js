@@ -1,15 +1,32 @@
+require('dotenv').config()
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-require('dotenv').config()
-var index = require('./routes/index');
-var users = require('./routes/users');
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI); 
+const methodOverride = require('method-override')
+//database setup
+
+mongoose.Promise = global.Promise
+mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true});
+
+const db = mongoose.connection
+db.on('error', (error) => {
+  console.log(error)
+})
+db.once('open', () => {
+  console.log('Connected to MongoDB! Surprised? Me too!')
+})
+//controllers 
+const orderController = require('./routes/orderController');
+const pizzaController = require('./routes/pizzaController');
+const userController = require('./routes/userController');
+const indexController = require('./routes/indexController')
+
 var app = express();
+app.use(methodOverride('_method'))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,8 +40,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/users', users);
+app.use('/', indexController);
+app.use('/users', userController);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
