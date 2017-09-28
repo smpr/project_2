@@ -47,7 +47,7 @@ router.get('/:userId/edit', (request, response) => {
   const userId = request.params.userId
 
   UserModel.findById(userId)
-      .then((company) => {
+      .then((user) => {
           response.render('users/edit', {
               user: user
           })
@@ -60,9 +60,9 @@ router.put('/:userId', (request, response) => {
   const userId = request.params.userId
   const updatedUser = request.body
 
-  UserModel.findByIdAndUpdate(UserId, updatedUser, { new: true })
+  UserModel.findByIdAndUpdate(userId, updatedUser, { new: true })
       .then(() => {
-          response.redirect(`/users/${UserId}`)
+          response.redirect(`/users/${userId}`)
       })
 })
 
