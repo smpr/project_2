@@ -50,8 +50,8 @@ const toppings = [topping1, topping2, topping3]
 users.forEach((user) => {
 
     user.order = orders
-    //order.pizza = pizza
-    //pizza.topping = topping
+    //orders.pizza = pizzas
+    //pizzas.topping = toppings
     user.save()
         .then((user) => {
             console.log(`${user.name} saved!`)
@@ -59,13 +59,7 @@ users.forEach((user) => {
         .catch((error) => {
             console.log(error)
         })
-    //order.save()
-    //    .then((user) => {
-    //        console.log(`${order.name} saved!`)
-    //    })
-    //    .catch((error) => {
-    //        console.log(error)
-    //    })
+        
 });
 
 // Disconnect from database
