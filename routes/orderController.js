@@ -116,14 +116,14 @@ router.get('/:orderId/delete', (request, response) => {
     const userId = request.params.userId
     const orderId = request.params.orderId
 
-    CompanyModel.findById(userId)
+    UserModel.findById(userId)
         .then((user) => {
             const order = user.orders.id(orderId).remove()
 
             return user.save()
         })
         .then(() => {
-            response.redirect(`/orders/${orderId}/users`)
+            response.redirect(`/users/${orderId}/orders`)
         })
 })
 
