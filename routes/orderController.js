@@ -6,8 +6,8 @@ const UserModel = Schema.UserModel;
 
 // INDEX
 router.get('/', (request, response) => {
-
-    const UserId = request.params.UserId
+   
+    const UserId = request.params.userId
 
     UserModel.findById(UserId)
         .then((user) => {
