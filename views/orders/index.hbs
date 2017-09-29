@@ -1,15 +1,18 @@
 <div>
-    <h1>Some Random Title(orders)</h1>
+    <h1>{{user.name}}'s Orders</h1>
 
-    <h3>Companies:</h3>
     <div>
-        <a href="/companies/new">Add New Company</a>
+        <a href="/users/{{user._id}}/orders/new">Create a New Order</a>
     </div>
-    {{#each companies}}
+
+    <div>
+        <a href="/users">Back to Users</a>
+    </div>
+    
+    {{#each user.orders}}
         <div>
-            {{this.name}} - {{this.country}}
-            <a href="/companies/{{this._id}}">{{this.name}} Info</a>
-            <a href="/companies/{{this._id}}/snowboards">{{this.name}}'s Snowboards</a>
+            {{this.name}} - {{this.pickup}}
+            <a href="/users/{{../user._id}}/orders/{{this._id}}">View</a>
         </div>
     {{/each}}
 </div>
