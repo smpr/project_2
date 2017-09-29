@@ -4,10 +4,12 @@
         <a href="/Users/new">Add A User</a>
     </div>
     <h3>Users:</h3>
-    
+    <table class="usertable">
     {{#each users}}
-        <div>
-            <a href="/users/{{this._id}}">{{this.name}}</a>
-        </div>
+        <tr>
+              <td> <a href="/users/{{this._id}}">{{this.name}}</a></td>
+        </tr>
+       
     {{/each}}
+    </table>
 </div>
