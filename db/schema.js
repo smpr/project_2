@@ -23,8 +23,8 @@ const orderSchema = new Schema({
         unique: true
     },
     pickup: {
-        type: Boolean,
-        required: true
+        type: String,
+        
     },
     pizza: [pizzaSchema]
 });

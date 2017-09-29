@@ -80,7 +80,7 @@ router.put('/:orderId', (request, response) => {
             const order = user.orders.id(orderId)
 //this needs to all aspects of order in it
             order.name = updatedOrder.name
-            order.price = updatedOrder.price
+            //order.price = updatedOrder.price
 
             return user.save()
         })
