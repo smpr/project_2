@@ -125,6 +125,9 @@ router.get('/:orderId/delete', (request, response) => {
         .then(() => {
             response.redirect(`/users/${orderId}/orders`)
         })
+        .catch((error)=>{
+            console.log(error)
+        })
 })
 
 
