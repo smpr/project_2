@@ -69,7 +69,7 @@ router.get('/:orderId/edit', (request, response) => {
 })
 
 // UPDATE route
-router.put('/:snowboardId', (request, response) => {
+router.put('/:orderId', (request, response) => {
 
     const userId = request.params.userId
     const orderId = request.params.orderId
@@ -98,7 +98,7 @@ router.get('/:orderId', (request, response) => {
 
     UserModel.findById(userId)
         .then((user) => {
-            const sorder = user.orders.id(orderId)
+            const order = user.orders.id(orderId)
 
             response.render('orders/show', {
                 order: order,

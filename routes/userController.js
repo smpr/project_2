@@ -87,7 +87,7 @@ router.get('/:userId/delete', (request, response) => {
 
   const userId = request.params.userId
 
-  UserModel.findByIdAndRemove(UserId)
+  UserModel.findByIdAndRemove(userId)
       .then(() => {
           response.redirect('/Users')
       })
