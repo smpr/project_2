@@ -7,7 +7,7 @@ const Schema = mongoose.Schema;
 //        type: String,
 //        required: true
 //    }
-})
+//})
 const pizzaSchema = new Schema({
    size: {
         type: String,
@@ -47,13 +47,13 @@ const userSchema = new Schema({
 });
 
 
-const ToppingModel = mongoose.model('Topping', toppingSchema)
+//const ToppingModel = mongoose.model('Topping', toppingSchema)
 const PizzaModel = mongoose.model('Pizza', pizzaSchema)
 const UserModel = mongoose.model('User', userSchema)
 const OrderModel = mongoose.model('Order', orderSchema)
 
 module.exports = {
-    ToppingModel: ToppingModel,
+   //// ToppingModel: ToppingModel,
     PizzaModel: PizzaModel,
     UserModel: UserModel,
     OrderModel: OrderModel

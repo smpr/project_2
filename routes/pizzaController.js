@@ -1,9 +1,22 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express')
+const router = express.Router({ mergeParams: true })
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+const Schema = require("../db/schema.js");
+const UserModel = Schema.UserModel;
 
-module.exports = router;
+// INDEX
+router.get('/', (request, response) => {
+   
+    const UserId = request.params.userId
+
+    UserModel.findById(UserId)
+        .then((user) => {
+            response.render('pizza/new', {
+                user: user
+            })
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+
+})

@@ -43,7 +43,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexController);
 app.use('/users/:userId/orders', orderController)
 app.use('/users', userController);
-
+app.use('/users/:userId/orders/new/create', pizzaController)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
