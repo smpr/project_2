@@ -20,11 +20,10 @@ const orderSchema = new Schema({
     name: {
         type: String,
         required: true,
-        unique: true
+        
     },
     pickup: {
         type: String,
-        
     },
     pizza: [pizzaSchema]
 });

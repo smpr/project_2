@@ -37,7 +37,7 @@ router.post('/', (request, response) => {
           response.redirect('/users')
       })
       .catch((error) => {
-          console.log(error)
+          response.send(error)
       })
 })
 
