@@ -41,8 +41,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexController);
+app.use('/users/:userId/orders/:orderId/pizza', pizzaController)
 app.use('/users/:userId/orders', orderController)
-app.use('/users/:userId/pizza', pizzaController)
 app.use('/users', userController);
 
 
