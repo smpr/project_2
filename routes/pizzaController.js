@@ -1,8 +1,10 @@
 const express = require('express')
-const router = express.Router({ mergeParams: true })
-
+//const router = express.Router({ mergeParams: true })
+const router = express.Router()
 const Schema = require("../db/schema.js");
 const UserModel = Schema.UserModel;
+//const PizzaModel = Schema.PizzaMode;
+//const OrderModel = Schema.OrderModel;
 
 // INDEX
 router.get('/', (request, response) => {
@@ -20,3 +22,5 @@ router.get('/', (request, response) => {
         })
 
 })
+
+module.exports = router
