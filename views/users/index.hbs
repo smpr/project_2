@@ -1,15 +1,21 @@
 <div>
-    <h1>User List</h1>
+   
 <div>
-        <a href="/Users/new">Add A User</a>
-    </div>
+
     <h3>Users:</h3>
+        <a href="/Users/new">Add A User</a>
+
+</div>
+
     <table class="usertable">
     {{#each users}}
+        <th>
         <tr>
               <td> <a href="/users/{{this._id}}">{{this.name}}</a></td>
         </tr>
-       
+</th>
+
     {{/each}}
-    </table>
+     
+</table>
 </div>

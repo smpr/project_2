@@ -1,16 +1,25 @@
 <div>
     <h1>{{user.name}}</h1>
+    <tr>
+        <td> <a href="/users/{{user._id}}/delete">Delete</a></td>
+    </tr>
     <div>Address: {{user.address}}</div>
     <div>Phone Number: {{user.phone}}</div>
-    <a href="/users/{{user._id}}/orders">Orders</a>
+    
 
-    <div>
-        <a href="/users">Back to User List</a>
-    </div>
-    <div>
-        <a href="/users/{{user._id}}/edit">Edit</a>
-    </div>
-    <div>
-        <a href="/users/{{user._id}}/delete">Delete</a>
-    </div>
+   
+ 
+    
+<table>
+    <tr>
+       <td><a href="/users/{{user.id}}/pizza"> New Orders</a></td>
+       <td><a href="/users/{{user._id}}/orders">Orders</a></td>
+    </tr>
+    <tr>
+        <td><a href="/users">Back to User List</a></td>
+        <td><a href="/users/{{user._id}}/edit">Edit Profile</a>
+</td>
+    </tr>
+    
+</table>
 </div>
