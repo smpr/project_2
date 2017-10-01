@@ -31,18 +31,14 @@ const orderSchema = new Schema({
     pizza: [pizzaSchema]
 });
 const userSchema = new Schema({
-    name: {
-        type:{
-            type: String,
-            required: true
-        }
-    },
+   
+    
     first: {
         type: String,
     //    required: true
     },
     last: {
-        tpye: String,
+        type: String,
     //    required: true
     },
     address: {

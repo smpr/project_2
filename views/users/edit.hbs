@@ -1,7 +1,9 @@
 <form action="/users/{{user._id}}?_method=PUT" method="POST">
-    <label for="name">Name</label>
-    <input type="text" name="name" value="{{user.name}}">
+    <label for="first">First Name</label>
+    <input type="text" name="first" value="{{user.first}}">
 
+    <label for="last">Last Name</label>
+    <input type="text" name="last" value="{{user.last}}">
     <label for="address">Address</label>
     <input type="text" name="address" value="{{user.address}}">
 

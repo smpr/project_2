@@ -25,9 +25,9 @@ UserModel.remove({}, function (err) {
     console.log(err);
 });
 //user
-const bob = new UserModel({ name: 'Bob Barker', address: '125 Generic Street', phone:'4045555555'})
-const bill = new UserModel({ name: 'Bill Barker', address: '225 Generic Street', phone:'4045555556'})
-const stew = new UserModel({ name: 'Stew Barker', address: '325 Generic Street', phone:'4045555557'})
+const bob = new UserModel({first: 'Bob', last:'Barker', address: '125 Generic Street', phone:'4045555555'})
+const bill = new UserModel({first: 'Bill', last:'Barker',address: '225 Generic Street', phone:'4045555556'})
+const stew = new UserModel({first: 'Stew', last:'Barker',address: '325 Generic Street', phone:'4045555557'})
 //order
 const order1 = new OrderModel({ name: 'First Order', pickup: true}) 
 const order2 = new OrderModel({ name: 'Second Order', pickup: true}) 
