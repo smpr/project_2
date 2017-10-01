@@ -32,8 +32,18 @@ const orderSchema = new Schema({
 });
 const userSchema = new Schema({
     name: {
+        type:{
+            type: String,
+            required: true
+        }
+    },
+    first: {
         type: String,
-        required: true
+    //    required: true
+    },
+    last: {
+        tpye: String,
+    //    required: true
     },
     address: {
         type: String,
