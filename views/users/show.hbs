@@ -12,13 +12,13 @@
     </tr>
     
     <tr>
-        <td><form action="/users"><input type="Submit" value="Back to Users" /></form></td>
-        <td><form action="/users/{{user.id}}/pizza/new"><input type="submit" value="New Order" /></form></td>
+        <td><form action="/users"><input class="button" type="Submit" value="Back to Users" /></form></td>
+        <td><form action="/users/{{user.id}}/pizza/new"><input class="button" class="new" type="submit" value="New Order" /></form></td>
         <td></td>
     </tr>
     <tr>
-        <td><form action="/users/{{user.id}}/edit"><input type="submit" value="Edit Profile" /></form></td>
-        <td><form action="/users/{{user._id}}/delete"><input type="submit" value="Delete Profile"></form></td>
+        <td><form action="/users/{{user.id}}/edit"><input class="button" type="submit" value="Edit Profile" /></form></td>
+        <td><form action="/users/{{user._id}}/delete"><input class="button" type="submit" value="Delete Profile"></form></td>
     </tr>
 </table>
 </div>

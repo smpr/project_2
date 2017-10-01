@@ -3,7 +3,7 @@ const express = require('express')
 const router = express.Router()
 const Schema = require("../db/schema.js");
 const UserModel = Schema.UserModel;
-const PizzaModel = Schema.PizzaMode;
+const PizzaModel = Schema.PizzaModel;
 const OrderModel = Schema.OrderModel;
 
 // INDEX
@@ -22,6 +22,8 @@ router.get('/', (request, response) => {
         })
 
 })
+
+  // CREATE route
 router.post('/', (request, response) => {
   
       const userId = request.params.userId

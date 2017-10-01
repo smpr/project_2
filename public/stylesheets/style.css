@@ -1,4 +1,4 @@
-newbody {
+body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("/images/background.jpg");
@@ -13,4 +13,15 @@ a:link{
   text-decoration: none;
   text-align: center;
   background-color: whitesmoke
+}
+.button {
+  background-color: red;
+  padding: 5px;
+  border-radius: 25px;
+  transition-duration: 0.7s;
+  width: 150px
+}
+.button:hover{
+  color: white;
+  width: 160px;
 }

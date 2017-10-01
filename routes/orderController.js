@@ -22,14 +22,14 @@ router.get('/', (request, response) => {
 })
 
 // NEW route
-//router.get('/new', (request, response) => {
+router.get('/new', (request, response) => {
 
-//    const userId = request.params.userId
+    const userId = request.params.userId
 
-//    response.render('orders/new', {
-//        userId: userId
-//    })
-//})
+      response.render('orders/new', {
+        userId: userId
+    })
+})
 
 // CREATE route
 router.post('/', (request, response) => {
