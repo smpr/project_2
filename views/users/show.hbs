@@ -1,25 +1,24 @@
 <div>
     <h1>{{user.first}} {{user.last}}</h1>
-    <tr>
-        <td> <a href="/users/{{user._id}}/delete">Delete</a></td>
-    </tr>
-    <div>Address: {{user.address}}</div>
-    <div>Phone Number: {{user.phone}}</div>
-    
 
-   
- 
-    
-<table>
+<table class="userInfoTable">
     <tr>
-       <td><a href="/users/{{user.id}}/pizza/new"> New Orders</a></td>
-       <td><a href="/users/{{user._id}}/orders">Orders</a></td>
+              <td>Address: </td>
+              <td>{{user.address}}</td>
     </tr>
     <tr>
-        <td><a href="/users">Back to User List</a></td>
-        <td><a href="/users/{{user._id}}/edit">Edit Profile</a>
-</td>
+              <td>Phone Number: </td>
+              <td>{{user.phone}}</td>
     </tr>
     
+    <tr>
+        <td><form action="/users"><input type="Submit" value="Back to Users" /></form></td>
+        <td><form action="/users/{{user.id}}/pizza/new"><input type="submit" value="New Order" /></form></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><form action="/users/{{user.id}}/edit"><input type="submit" value="Edit Profile" /></form></td>
+        <td><form action="/users/{{user._id}}/delete"><input type="submit" value="Delete Profile"></form></td>
+    </tr>
 </table>
 </div>

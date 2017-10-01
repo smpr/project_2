@@ -1,15 +1,16 @@
-body {
+newbody {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/background.jpg");
 }
 
 a:link{
   text-decoration: none;
   color: black
 }
-.usertable {
-  color: lightgreen;
+.mainUserTable {
+  
   text-decoration: none;
   text-align: center;
-  background-color: darkorange
+  background-color: whitesmoke
 }
