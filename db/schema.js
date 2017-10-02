@@ -22,7 +22,7 @@ const pizzaSchema = new Schema({
 const orderSchema = new Schema({
     name: {
         type: String,
-        required: true,
+        
         
     },
     pickup: {

@@ -1,6 +1,6 @@
 const express = require('express')
-//const router = express.Router({ mergeParams: true })
-const router = express.Router()
+const router = express.Router({ mergeParams: true })
+// const router = express.Router()
 const Schema = require("../db/schema.js");
 const UserModel = Schema.UserModel;
 const PizzaModel = Schema.PizzaModel;
@@ -27,9 +27,12 @@ router.get('/', (request, response) => {
 router.get('/new', (request, response) => {
 
     const userId = request.params.userId
-
+    const orderId = request.params.orderId
+    console.log("New route console" + orderId)
       response.render('pizza/new', {
-        userId: userId
+        userId: userId,
+        orderId: orderId
+
     })
 })
 
@@ -46,7 +49,10 @@ router.post('/', (request, response) => {
             return user.save()
         })
         .then((user) => {
-            response.redirect(`/users/${userId}/orders/${newOrder._id}/pizza/new`)
+            response.redirect(`/users/${userId}/orders/${newOrder._id}/pizza`)
+        })
+        .catch((error) => {
+            console.log(error)
         })
 
 })
