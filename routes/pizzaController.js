@@ -52,7 +52,7 @@ router.post('/', (request, response) => {
             return user.save()
         })
         .then((user) => {
-            response.redirect(`/users/${userId}/orders`)
+            response.redirect(`/users/${userId}/orders/${orderId}`)
         })
         .catch((error) => {
             console.log(error)

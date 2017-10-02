@@ -1,18 +1,27 @@
 <div>
     <h1>{{user.first}} {{user.last}}'s Orders</h1>
 
-    <div>
-        <a href="/users/{{user._id}}/orders/new">Create a New Order</a>
-    </div>
-
-    <div>
-        <a href="/users">Back to Users</a>
-    </div>
     
-    {{#each user.orders}}
-        <div>
-            {{this.name}} - {{this.pickup}}
-            <a href="/users/{{../user._id}}/orders/{{this._id}}">View</a>
-        </div>
-    {{/each}}
+  
 </div>
+<table class="orderUserTable">
+    <tr>
+       <th>Order Name</th>
+       <th></th>
+       
+    </tr>
+ {{#each user.orders}}
+        
+        <tr>
+              <td> <a href="/users/{{../user._id}}/orders/{{this._id}}">{{this.name}}</a> </td>
+              <td> <a href="/users/{{this._id}}">{{this.last}}</a></td>
+              <td></td>     
+        </tr>
+
+    {{/each}}
+    <tr>
+        <td><form action="/users"><input type="submit" value="Back to Users" /></form></td>
+        <td><form action="/users/{{user._id}}/orders/new"><input type="submit" value="New Order" /></form></td>
+        <td></td>
+    </tr>
+</table>
