@@ -1,25 +1,29 @@
 <h1>New Order</h1>
 <div class="pizzaOrder">
 <form action="/users/{{userId}}/orders/{{orderId}}/pizza" method="POST">
-  Pizza Size: <select>
-        <option value="Large" for="size" name="size">Large</option>
-        <option value="Medium" for="size" name="size">Medium</option>
-        <option value="Small" for="size" name="size">Small</option>
+  Pizza Size: 
+  <select name="pizzasize">
+        <option value="Large" for="size" >Large</option>
+        <option value="Medium" for="size">Medium</option>
+        <option value="Small" for="size">Small</option>
     </select><br>
-    Topping 1:<select>
-        <option value="Peperoni" for="toppingOne" name="toppingOne">Pepperoni</option>
-        <option value="Sausage" for="toppingOne" name="toppingOne">Sausage</option>
-        <option value="Cheese" for="toppingOne" name="toppingOne">Cheese</option>
+    Topping 1:
+    <select name="toppingOne">
+        <option value="Peperoni" for="toppingOne">Pepperoni</option>
+        <option value="Sausage" for="toppingOne">Sausage</option>
+        <option value="Cheese" for="toppingOne">Cheese</option>
     </select><br>
-    Topping 2:<select>
-        <option value="Peperoni" for="toppingTwo" name="toppingTwo">Pepperoni</option>
-        <option value="Sausage" for="toppingTwo" name="toppingTwo">Sausage</option>
-        <option value="Cheese" for="toppingTwo" name="toppingTwo">Cheese</option>
+    Topping 2:
+    <select name="toppingTwo">
+        <option value="Peperoni" for="toppingTwo">Pepperoni</option>
+        <option value="Sausage" for="toppingTwo">Sausage</option>
+        <option value="Cheese" for="toppingTwo">Cheese</option>
     </select><br>
-    Topping 3:<select>
-        <option value="Peperoni" for="toppingThree" name="toppingThree">Pepperoni</option>
-        <option value="Sausage" for="toppingThree" name="toppingThree">Sausage</option>
-        <option value="Cheese" for="toppingThree" name="toppingThree">Cheese</option>
+    Topping 3:
+    <select name="toppingThree">
+        <option value="Peperoni" for="toppingThree">Pepperoni</option>
+        <option value="Sausage" for="toppingThree">Sausage</option>
+        <option value="Cheese" for="toppingThree">Cheese</option>
     </select>
     <br>
     <input type="submit" value="Submit Order">

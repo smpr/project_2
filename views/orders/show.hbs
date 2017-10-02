@@ -1,5 +1,7 @@
 <div>
     {{order.name}}
+    {{order.pizza.size}}
+    {{order.pizza.toppingOne}}
     <a href="/users/{{userId}}/orders/{{order._id}}/edit">Edit</a>
     <a href="/users/{{userId}}/orders/{{order._id}}/delete">Delete</a>
     <a href="#">Reorder</a>

@@ -38,22 +38,26 @@ router.get('/new', (request, response) => {
 
 // CREATE route
 router.post('/', (request, response) => {
-
+    const orderId =request.params.orderId
     const userId = request.params.userId
-    const newOrder = new OrderModel(request.body)
-    console.log(newOrder)
+    console.log(request.body)
+    const newPizza = new PizzaModel(request.body)
+    console.log(newPizza)
 
     UserModel.findById(userId)
         .then((user) => {
-            user.orders.push(newOrder)
+            const order = user.orders.id(orderId)
+            console.log(order)
+            order.pizza.push(newPizza)
             return user.save()
         })
         .then((user) => {
-            response.redirect(`/users/${userId}/orders/${newOrder._id}/pizza`)
+            response.redirect(`/users/${userId}/orders`)
         })
         .catch((error) => {
             console.log(error)
         })
+        
 
 })
 
@@ -67,7 +71,7 @@ router.get('/:orderId/edit', (request, response) => {
         .then((user) => {
             const order = user.orders.id(orderId)
 
-            response.render('orders/edit', {
+            response.render('pizza/edit', {
                 order: order,
                 userId: userId
             })

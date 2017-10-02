@@ -9,9 +9,9 @@ const Schema = mongoose.Schema;
 //    }
 //})
 const pizzaSchema = new Schema({
-   size: {
+   pizzasize: {
         type: String,
-        required: true,
+        
     },
     toppingOne: String,
     toppingTwo: String,

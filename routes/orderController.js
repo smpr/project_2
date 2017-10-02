@@ -4,6 +4,7 @@ const router = express.Router({ mergeParams: true })
 const Schema = require("../db/schema.js");
 const UserModel = Schema.UserModel;
 const OrderModel = Schema.OrderModel;
+const PizzaModel = Schema.PizzaModel;
 
 // INDEX
 router.get('/', (request, response) => {
