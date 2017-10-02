@@ -3,6 +3,7 @@ const router = express.Router({ mergeParams: true })
 
 const Schema = require("../db/schema.js");
 const UserModel = Schema.UserModel;
+const OrderModel = Schema.OrderModel;
 
 // INDEX
 router.get('/', (request, response) => {
@@ -35,7 +36,8 @@ router.get('/new', (request, response) => {
 router.post('/', (request, response) => {
 
     const userId = request.params.userId
-    const newOrder= request.body
+    const newOrder = new OrderModel(request.body)
+    console.log(newOrder)
 
     UserModel.findById(userId)
         .then((user) => {
@@ -43,7 +45,7 @@ router.post('/', (request, response) => {
             return user.save()
         })
         .then((user) => {
-            response.redirect(`/users/${userId}/orders`)
+            response.redirect(`/users/${userId}/orders/${newOrder._id}/pizza/new`)
         })
 
 })

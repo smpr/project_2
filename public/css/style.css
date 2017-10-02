@@ -1,57 +1,74 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+/*main {
+  padding: 0rem;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #0a1612;
+  height: 70%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
 }
 
-p {
-  line-height: 2rem;
+a:link{
+  text-decoration: none;
+  color: black
+}
+.mainUserTable {
+  
+  text-decoration: none;
+  text-align: center;
+  background-color: #c5c1c0
+}
+.button {
+  background-color:#f7ce3e;
+  padding: 5px;
+  border-radius: 25px;
+  transition-duration: 0.7s;
+  width: 150px
+}
+.button:hover{
+  color: white;
+  width: 160px;
+}
+.userInfoTable {
+  
+  text-decoration: none;
+  text-align: center;
+  background-color: #c5c1c0;
+  
+}
+td {
+  width: 165px
 }
 
-.button-collapse {
-  color: #26a69a;
+header{
+  background-color:#1a2930;
+  text-align:center;
+  height: 15%;
 }
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  height: 15%;
+  background-color: #f7ce3e;
+  text-align: center;
+}*/
+.bodypage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+.topnav {
+  background-color:#1a2930;
+  flex-grow: 2;
 }
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+.middlesection:{
+  flex-grow: 5;
 }
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
+.bottomnav {
+  flex-grow:2;
+  background-color: #f7ce3e;
 }
