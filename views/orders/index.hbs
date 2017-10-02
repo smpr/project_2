@@ -15,13 +15,12 @@
         <tr>
               <td> <a href="/users/{{../user._id}}/orders/{{this._id}}">{{this.name}}</a> </td>
               <td> <a href="/users/{{this._id}}">{{this.last}}</a></td>
-              <td></td>     
+              
         </tr>
 
     {{/each}}
     <tr>
-        <td><form action="/users"><input type="submit" value="Back to Users" /></form></td>
-        <td><form action="/users/{{user._id}}/orders/new"><input type="submit" value="New Order" /></form></td>
-        <td></td>
+        <td><form action="/users"><input class="button" type="submit" value="Back to Users" /></form></td>
+        <td><form action="/users/{{user._id}}/orders/new"><input class="button" type="submit" value="New Order" /></form></td>
     </tr>
 </table>

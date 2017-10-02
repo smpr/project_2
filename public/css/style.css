@@ -1,4 +1,4 @@
-/*main {
+main {
   padding: 0rem;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #0a1612;
@@ -14,6 +14,18 @@ a:link{
   color: black
 }
 .mainUserTable {
+  
+  text-decoration: none;
+  text-align: center;
+  background-color: #c5c1c0
+}
+.orderUserTable {
+  
+  text-decoration: none;
+  text-align: center;
+  background-color: #c5c1c0
+}
+.newPizza {
   
   text-decoration: none;
   text-align: center;
