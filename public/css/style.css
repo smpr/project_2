@@ -1,4 +1,4 @@
-main {
+body {
   padding: 0rem;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #0a1612;
@@ -6,6 +6,7 @@ main {
   width: 100%;
   left: 0;
   bottom: 0;
+  color: #FEDc3d;
   position: absolute;
 }
 
@@ -17,22 +18,35 @@ a:link{
   
   text-decoration: none;
   text-align: center;
-  background-color: #c5c1c0
+  background-color: #01ABAA
+}
+.createUser {
+  
+  text-decoration: none;
+  text-align: center;
+  background-color: #01ABAA
 }
 .orderUserTable {
   
   text-decoration: none;
   text-align: center;
-  background-color: #c5c1c0
+  background-color: #01ABAA
 }
 .newPizza {
   
   text-decoration: none;
   text-align: center;
-  background-color: #c5c1c0
+  background-color: #01ABAA
+}
+.userInfoTable {
+  
+  text-decoration: none;
+  text-align: center;
+  background-color: #01ABAA
+  
 }
 .button {
-  background-color:#f7ce3e;
+  background-color:#FEA680;
   padding: 5px;
   border-radius: 25px;
   transition-duration: 0.7s;
@@ -42,13 +56,7 @@ a:link{
   color: white;
   width: 160px;
 }
-.userInfoTable {
-  
-  text-decoration: none;
-  text-align: center;
-  background-color: #c5c1c0;
-  
-}
+
 td {
   width: 165px
 }
@@ -67,7 +75,7 @@ footer {
   height: 15%;
   background-color: #f7ce3e;
   text-align: center;
-}*/
+}
 .bodypage {
   display: flex;
   flex-direction: column;
