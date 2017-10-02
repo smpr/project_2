@@ -105,7 +105,8 @@ router.get('/:orderId', (request, response) => {
 
             response.render('orders/show', {
                 order: order,
-              userId: userId
+                pizzas: order.pizza,
+                userId: userId
             })
         })
         .catch((error) => {
