@@ -1,9 +1,16 @@
 <h1>New Order</h1>
-<form action="/users/{{userId}}/orders" method="POST">
-    <label for="name">Name</label>
-    <input type="text" name="name">
+<table class="NewOrder">
+   <form action="/users/{{userId}}/orders" method="POST"></form>
+    <tr><td><label for="name">Order Name</label>
+    <input type="text" name="name"></td>
+    <td><input type="submit" value="Continue"></td>
+    </tr>
+
+    
+    
 
     
 
-    <input type="submit" value="Create">
+    
 </form>
+</table>
