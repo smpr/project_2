@@ -1,9 +1,8 @@
 # project_2
 Heroku link: https://still-tor-33074.herokuapp.com
 Wire Frame: https://i.imgur.com/YMYdLns.jpg
-object model: 
 GitHub Link: https://github.com/smpr/project_2
-Portfolio Site Link: 
+Portfolio Site Link: http://www.atlwdi12.com/
 Trello Link: https://trello.com/b/IJL8VnRd/wdi-project-2
 About the project:
 This is a ordering application using:
