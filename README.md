@@ -1,14 +1,5 @@
 # project_2
-<html>
-<body>
-<style type="text/css">
-    .btn {
-        background-color:red;
-        cursor:pointer;
-    }
-</style>
 
-<button class="btn">Click me</button>
 Heroku link: https://still-tor-33074.herokuapp.com<br>
 Wire Frame: https://i.imgur.com/YMYdLns.jpg<br>
 GitHub Link: https://github.com/smpr/project_2<br>
@@ -32,5 +23,3 @@ I felt confident with my base level routes and linking to those objects however 
 <h3><b>Things I would add later:</b></h3><br>
 Thinking about what the user can see and do: <br>
     I would like to add a reorder button for the user to repeat orders. I would also like to make it to where the app actually "tracks" the pizza progress(thank you dominos) and when completed this would become a "completed orders" object. While it is being prepared a list for "current orders" would be a nice addition incase the user leaves the page unexpectantly. On the other side I would like to simulate the pizza shop recieving the order and pushing the order through the different stages of the process whether it be from being made to being put in the oven to going out to delievery. This would, in my mind, resemble a full ecompassing app that shows that the data is being used by multiple sides. <br>I would also like to add a login page so that the profile is actually saved to the user instead of picking your name out of a list. <br>
-</body>
-</html>
