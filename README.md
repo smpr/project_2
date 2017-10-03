@@ -1,9 +1,9 @@
 # project_2
-Heroku link: https://still-tor-33074.herokuapp.com
-Wire Frame: https://i.imgur.com/YMYdLns.jpg
-GitHub Link: https://github.com/smpr/project_2
-Portfolio Site Link: http://www.atlwdi12.com/
-Trello Link: https://trello.com/b/IJL8VnRd/wdi-project-2
+Heroku link: https://still-tor-33074.herokuapp.com<br>
+Wire Frame: https://i.imgur.com/YMYdLns.jpg<br>
+GitHub Link: https://github.com/smpr/project_2<br>
+Portfolio Site Link: http://www.atlwdi12.com/<br>
+Trello Link: https://trello.com/b/IJL8VnRd/wdi-project-2<br>
 About the project:
 This is a ordering application using:
 HTML
