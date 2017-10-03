@@ -5,6 +5,7 @@ Wire Frame: https://i.imgur.com/YMYdLns.jpg<br>
 GitHub Link: https://github.com/smpr/project_2<br>
 Portfolio Site Link: http://www.atlwdi12.com/<br>
 Trello Link: https://trello.com/b/IJL8VnRd/wdi-project-2<br>
+ERD: https://i.imgur.com/dB1a24S.jpg<br>
 <b><h1>About the project:</h1></b><br>
 <h3>This is a ordering application using:</h3><br>
 HTML<br>
