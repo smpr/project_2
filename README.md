@@ -4,7 +4,7 @@ Heroku link: https://still-tor-33074.herokuapp.com<br>
 Wire Frame: https://i.imgur.com/YMYdLns.jpg<br>
 GitHub Link: https://github.com/smpr/project_2<br>
 Trello Link: https://trello.com/b/IJL8VnRd/wdi-project-2<br>
-<h3>ERD:</h3> <img src="project2erd.png" />https://i.imgur.com/dB1a24S.jpg<br>
+<h3>ERD:</h3> <img src="project2erd.png" /><br>
 <b><h1>About the project:</h1></b><br>
 <h3>This is a ordering application using:</h3><br>
 HTML<br>
