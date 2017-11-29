@@ -1,24 +1,40 @@
 <div>
     <h1>{{user.first}} {{user.last}}</h1>
 
-<table class="userInfoTable">
-    <tr>
-              <td>Address: </td>
-              <td>{{user.address}}</td>
-    </tr>
-    <tr>
-              <td>Phone Number: </td>
-              <td>{{user.phone}}</td>
-    </tr>
-    
-    <tr>
-        <td><form action="/users"><input class="button" type="Submit" value="Back to Users" /></form></td>
-        <td><form action="/users/{{user.id}}/orders/new"><input class="button" class="new" type="submit" value="New Order" /></form></td>
-      
-    </tr>
-    <tr>
-        <td><form action="/users/{{user.id}}/edit"><input class="button" type="submit" value="Edit Profile" /></form></td>
-        <td><form action="/users/{{user._id}}/delete"><input class="button" type="submit" value="Delete Profile"></form></td>
-    </tr>
-</table>
+    <table class="userInfoTable">
+        <tr>
+            <td>Address: </td>
+            <td>{{user.address}}</td>
+        </tr>
+        <tr>
+            <td>Phone Number: </td>
+            <td>{{user.phone}}</td>
+        </tr>
+
+        <tr>
+            <td>
+                <form action="/users">
+                    <input class="button" type="Submit" value="Back to Users" />
+                </form>
+            </td>
+            <td>
+                <form action="/users/{{user.id}}/orders/new">
+                    <input class="button" class="new" type="submit" value="New Order" />
+                </form>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <form action="/users/{{user.id}}/edit">
+                    <input class="button" type="submit" value="Edit Profile" />
+                </form>
+            </td>
+            <td>
+                <form action="/users/{{user._id}}/delete">
+                    <input class="button" type="submit" value="Delete Profile">
+                </form>
+            </td>
+        </tr>
+    </table>
 </div>

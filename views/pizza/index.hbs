@@ -1,8 +1,7 @@
 <h1>This is Pizza index</h1>
- {{#each users.orders.pizza}}
-        <div>
-            {{this.pizzasize}} - {{this.toppingOne}}
-            this is showing up
-            <a href="/users/{{../user._id}}/orders/{{this._id}}">View</a>
-        </div>
-    {{/each}}
+{{#each users.orders.pizza}}
+<div>
+    {{this.pizzasize}} - {{this.toppingOne}} this is showing up
+    <a href="/users/{{../user._id}}/orders/{{this._id}}">View</a>
+</div>
+{{/each}}

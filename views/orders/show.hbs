@@ -1,31 +1,47 @@
 <div>
     <h1>{{order.name}}</h1>
 
- 
 
-    
+
+
 </div>
 <table class="mainUserTable">
     <tr>
-       <th>Size</th>
-       <th>First Topping</th>
-       <th>Second Topping</th>
-       <th>Third Topping</th>
+        <th>Size</th>
+        <th>First Topping</th>
+        <th>Second Topping</th>
+        <th>Third Topping</th>
     </tr>
- {{#each pizzas}}
-        
-        <tr>
-              <td>{{this.pizzasize}}</td>
-              <td>{{this.toppingOne}}</td>
-              <td>{{this.toppingTwo}}</td>
-              <td>{{this.toppingThree}}</td>
-        </tr>
+    {{#each pizzas}}
+
+    <tr>
+        <td>{{this.pizzasize}}</td>
+        <td>{{this.toppingOne}}</td>
+        <td>{{this.toppingTwo}}</td>
+        <td>{{this.toppingThree}}</td>
+    </tr>
 
     {{/each}}
     <tr>
-        <td><form action="/users/{{userId}}/orders/{{order._id}}/edit"><input class="button" type="submit" value="Edit Order" /></form></td>
-        <td><form action="/users/{{userId}}/orders/{{order._id}}/delete"><input class="button" type="submit" value="Delete Order" /></form></td>
-        <td><form action="/users/{{userId}}/orders/{{order._id}}/pizza/new"><input class="button" type="submit" value="Add A Pizza" /></form></td>
-        <td><form action="/users/{{userId}}/orders"><input class="button" type="submit" value="Back To Orders" /></form></td>
+        <td>
+            <form action="/users/{{userId}}/orders/{{order._id}}/edit">
+                <input class="button" type="submit" value="Edit Order" />
+            </form>
+        </td>
+        <td>
+            <form action="/users/{{userId}}/orders/{{order._id}}/delete">
+                <input class="button" type="submit" value="Delete Order" />
+            </form>
+        </td>
+        <td>
+            <form action="/users/{{userId}}/orders/{{order._id}}/pizza/new">
+                <input class="button" type="submit" value="Add A Pizza" />
+            </form>
+        </td>
+        <td>
+            <form action="/users/{{userId}}/orders">
+                <input class="button" type="submit" value="Back To Orders" />
+            </form>
+        </td>
     </tr>
 </table>

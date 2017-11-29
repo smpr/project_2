@@ -1,21 +1,31 @@
 <table class="mainUserTable">
     <tr>
-       <th>First Name</th>
-       <th>Last Name</th>
-       <th>Orders</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Orders</th>
     </tr>
- {{#each users}}
-        
-        <tr>
-              <td> <a href="/users/{{this._id}}">{{this.first}}</a></td>
-              <td> <a href="/users/{{this._id}}">{{this.last}}</a></td>
-              <td><a href="/users/{{this._id}}/orders">Orders</a></td>
-        </tr>
+    {{#each users}}
+
+    <tr>
+        <td>
+            <a href="/users/{{this._id}}">{{this.first}}</a>
+        </td>
+        <td>
+            <a href="/users/{{this._id}}">{{this.last}}</a>
+        </td>
+        <td>
+            <a href="/users/{{this._id}}/orders">Orders</a>
+        </td>
+    </tr>
 
     {{/each}}
     <tr>
         <td></td>
-        <td><form action="/Users/new"><input class="button" type="submit" value="Create User" /></form></td>
-       
+        <td>
+            <form action="/Users/new">
+                <input class="button" type="submit" value="Create User" />
+            </form>
+        </td>
+
     </tr>
 </table>

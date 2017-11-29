@@ -1,45 +1,54 @@
 <div>
-<h1>New Order</h1>
+  <h1>New Order</h1>
 
-<table class="newPizza">
-<form action="/users/{{userId}}/orders/{{orderId}}/pizza" method="POST">
-  <tr>
-    <td>Pizza Size:</td>    
-    <td><select name="pizzasize">
-        <option value="Large" for="size" >Large</option>
-        <option value="Medium" for="size">Medium   </option>
-        <option value="Small" for="size">Small</option>
-        </select>
-    </td>
-  </tr> 
-  <tr>
-    <td>Topping 1:</td>
-    <td><select name="toppingOne">
-        <option value="Peperoni" for="toppingOne">Pepperoni</option>
-        <option value="Sausage" for="toppingOne">Sausage</option>
-        <option value="Cheese" for="toppingOne">Cheese</option>
-    </select></td>
-  </tr>
-  <tr>
-      <td>Topping 2:</td>
-      <td><select name="toppingTwo">
-        <option value="Peperoni" for="toppingTwo">Pepperoni</option>
-        <option value="Sausage" for="toppingTwo">Sausage</option>
-        <option value="Cheese" for="toppingTwo">Cheese</option>
-    </select></td>
-  </tr>
-  <tr>
-      <td>Topping 3:</td>
-      <td> <select name="toppingThree">
-        <option value="Peperoni" for="toppingThree">Pepperoni</option>
-        <option value="Sausage" for="toppingThree">Sausage</option>
-        <option value="Cheese" for="toppingThree">Cheese</option>
-    </select></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><input class="button" type="submit" value="Submit Order"></td>
-    </tr> 
-</form>
-</table>
+  <table class="newPizza">
+    <form action="/users/{{userId}}/orders/{{orderId}}/pizza" method="POST">
+      <tr>
+        <td>Pizza Size:</td>
+        <td>
+          <select name="pizzasize">
+            <option value="Large" for="size">Large</option>
+            <option value="Medium" for="size">Medium </option>
+            <option value="Small" for="size">Small</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Topping 1:</td>
+        <td>
+          <select name="toppingOne">
+            <option value="Peperoni" for="toppingOne">Pepperoni</option>
+            <option value="Sausage" for="toppingOne">Sausage</option>
+            <option value="Cheese" for="toppingOne">Cheese</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Topping 2:</td>
+        <td>
+          <select name="toppingTwo">
+            <option value="Peperoni" for="toppingTwo">Pepperoni</option>
+            <option value="Sausage" for="toppingTwo">Sausage</option>
+            <option value="Cheese" for="toppingTwo">Cheese</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Topping 3:</td>
+        <td>
+          <select name="toppingThree">
+            <option value="Peperoni" for="toppingThree">Pepperoni</option>
+            <option value="Sausage" for="toppingThree">Sausage</option>
+            <option value="Cheese" for="toppingThree">Cheese</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input class="button" type="submit" value="Submit Order">
+        </td>
+      </tr>
+    </form>
+  </table>
 </div>
